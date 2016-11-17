@@ -7,3 +7,20 @@
 //
 
 import Foundation
+
+struct Recipe {
+
+    enum Kind: Int {
+        case starter
+        case main
+        case desert
+    }
+
+    let type: Kind
+    let name: String
+    let numberOfPerson: Int
+    let prepTime: Int
+    let cookTime: Int
+    let ingredients: [String]
+    let steps: [String]
+}
