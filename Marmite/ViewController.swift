@@ -33,9 +33,12 @@ class ViewController: UIViewController {
 
     //MARK: - Action
     @IBAction func save(_ sender: AnyObject) {
+
+        print("Save" + nameTextField.text!)
     }
     
     @IBAction func cancel(_ sender: AnyObject) {
+        print("Cancel")
     }
 }
 
