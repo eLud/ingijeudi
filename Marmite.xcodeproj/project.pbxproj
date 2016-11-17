@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33A3CF551DDE2F9700713B28 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF541DDE2F9700713B28 /* Recipe.swift */; };
 		33A3CF571DDE2FBA00713B28 /* RecipeBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF561DDE2FBA00713B28 /* RecipeBook.swift */; };
+		33A3CF601DDE36F300713B28 /* MarmiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF5F1DDE36F300713B28 /* MarmiteTests.swift */; };
 		33D2EBAE1DCBCAB4009ED706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2EBAD1DCBCAB4009ED706 /* AppDelegate.swift */; };
 		33D2EBB01DCBCAB4009ED706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2EBAF1DCBCAB4009ED706 /* ViewController.swift */; };
 		33D2EBB31DCBCAB4009ED706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D2EBB11DCBCAB4009ED706 /* Main.storyboard */; };
@@ -16,9 +17,22 @@
 		33D2EBB81DCBCAB4009ED706 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D2EBB61DCBCAB4009ED706 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		33A3CF621DDE36F300713B28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33D2EBA21DCBCAB4009ED706 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D2EBA91DCBCAB4009ED706;
+			remoteInfo = Marmite;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		33A3CF541DDE2F9700713B28 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		33A3CF561DDE2FBA00713B28 /* RecipeBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeBook.swift; sourceTree = "<group>"; };
+		33A3CF5D1DDE36F300713B28 /* MarmiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarmiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A3CF5F1DDE36F300713B28 /* MarmiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarmiteTests.swift; sourceTree = "<group>"; };
+		33A3CF611DDE36F300713B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33D2EBAA1DCBCAB4009ED706 /* Marmite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marmite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D2EBAD1DCBCAB4009ED706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D2EBAF1DCBCAB4009ED706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		33A3CF5A1DDE36F300713B28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33D2EBA71DCBCAB4009ED706 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +69,20 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		33A3CF5E1DDE36F300713B28 /* MarmiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				33A3CF5F1DDE36F300713B28 /* MarmiteTests.swift */,
+				33A3CF611DDE36F300713B28 /* Info.plist */,
+			);
+			path = MarmiteTests;
+			sourceTree = "<group>";
+		};
 		33D2EBA11DCBCAB4009ED706 = {
 			isa = PBXGroup;
 			children = (
 				33D2EBAC1DCBCAB4009ED706 /* Marmite */,
+				33A3CF5E1DDE36F300713B28 /* MarmiteTests */,
 				33D2EBAB1DCBCAB4009ED706 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				33D2EBAA1DCBCAB4009ED706 /* Marmite.app */,
+				33A3CF5D1DDE36F300713B28 /* MarmiteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +113,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		33A3CF5C1DDE36F300713B28 /* MarmiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33A3CF641DDE36F300713B28 /* Build configuration list for PBXNativeTarget "MarmiteTests" */;
+			buildPhases = (
+				33A3CF591DDE36F300713B28 /* Sources */,
+				33A3CF5A1DDE36F300713B28 /* Frameworks */,
+				33A3CF5B1DDE36F300713B28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33A3CF631DDE36F300713B28 /* PBXTargetDependency */,
+			);
+			name = MarmiteTests;
+			productName = MarmiteTests;
+			productReference = 33A3CF5D1DDE36F300713B28 /* MarmiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		33D2EBA91DCBCAB4009ED706 /* Marmite */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33D2EBBC1DCBCAB4009ED706 /* Build configuration list for PBXNativeTarget "Marmite" */;
@@ -104,10 +154,16 @@
 		33D2EBA21DCBCAB4009ED706 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Tec-Tec";
 				TargetAttributes = {
+					33A3CF5C1DDE36F300713B28 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A7SGM6JEMA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33D2EBA91DCBCAB4009ED706;
+					};
 					33D2EBA91DCBCAB4009ED706 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = A7SGM6JEMA;
@@ -129,11 +185,19 @@
 			projectRoot = "";
 			targets = (
 				33D2EBA91DCBCAB4009ED706 /* Marmite */,
+				33A3CF5C1DDE36F300713B28 /* MarmiteTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		33A3CF5B1DDE36F300713B28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33D2EBA81DCBCAB4009ED706 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +211,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		33A3CF591DDE36F300713B28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A3CF601DDE36F300713B28 /* MarmiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33D2EBA61DCBCAB4009ED706 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -159,6 +231,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33A3CF631DDE36F300713B28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33D2EBA91DCBCAB4009ED706 /* Marmite */;
+			targetProxy = 33A3CF621DDE36F300713B28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		33D2EBB11DCBCAB4009ED706 /* Main.storyboard */ = {
@@ -180,6 +260,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		33A3CF651DDE36F300713B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = MarmiteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tectec.training.humanCoders.MarmiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marmite.app/Marmite";
+			};
+			name = Debug;
+		};
+		33A3CF661DDE36F300713B28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = MarmiteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tectec.training.humanCoders.MarmiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marmite.app/Marmite";
+			};
+			name = Release;
+		};
 		33D2EBBA1DCBCAB4009ED706 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -302,6 +412,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		33A3CF641DDE36F300713B28 /* Build configuration list for PBXNativeTarget "MarmiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A3CF651DDE36F300713B28 /* Debug */,
+				33A3CF661DDE36F300713B28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		33D2EBA51DCBCAB4009ED706 /* Build configuration list for PBXProject "Marmite" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
