@@ -8,6 +8,17 @@
 
 import UIKit
 
+enum FormError: Error {
+    case missingInfo(textField: UIView)
+
+    func alert() {
+        switch self {
+        case .missingInfo(let textField):
+            textField.backgroundColor = UIColor.red
+        }
+    }
+}
+
 class ViewController: UIViewController {
 
     //MARK: - Outlets
@@ -31,10 +42,39 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //MARK: - Private methods
+
+    private func recipeFromForm() throws -> Recipe {
+
+        guard let nameString = nameTextField.text, !nameString.isEmpty else { throw FormError.missingInfo(textField: nameTextField) }
+        guard let numberOfPString = nbOfPersonTextField.text, let numberOfPInt = Int(numberOfPString) else {
+            throw FormError.missingInfo(textField: nbOfPersonTextField)
+        }
+        guard let prepString = prepTimeTextField.text, let prepInt = Int(prepString) else {
+            throw FormError.missingInfo(textField: prepTimeTextField)
+        }
+        guard let cookTimeString = cookTimeTextField.text, let cookTimeInt = Int(cookTimeString) else {
+            throw FormError.missingInfo(textField: cookTimeTextField)
+        }
+        guard let ingredients = ingredientsTextView.text else { throw FormError.missingInfo(textField: ingredientsTextView) }
+        guard let steps = stepsTextView.text else { throw FormError.missingInfo(textField: stepsTextView) }
+        guard let kind = Recipe.Kind(rawValue: recipedTypeSegmentedControl.selectedSegmentIndex) else { fatalError() }
+
+        let stepsArray = steps.components(separatedBy: "\n")
+        let ingredientsArray = ingredients.components(separatedBy: "\n")
+
+        return Recipe(type: kind, name: nameString, numberOfPerson: numberOfPInt, prepTime: prepInt, cookTime: cookTimeInt, ingredients: ingredientsArray, steps: stepsArray)
+    }
+
     //MARK: - Action
     @IBAction func save(_ sender: AnyObject) {
-
-        print("Save" + nameTextField.text!)
+        do {
+            let recipe = try recipeFromForm()
+            RecipeBook.instance.add(recipe)
+        } catch {
+            print("Error")
+        }
+        print(RecipeBook.instance.allRecipes)
     }
     
     @IBAction func cancel(_ sender: AnyObject) {
