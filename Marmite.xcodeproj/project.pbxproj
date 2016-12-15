@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3323717D1E032B5400898EE5 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323717C1E032B5400898EE5 /* RecipeTableViewController.swift */; };
+		3323717F1E0334F500898EE5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3323717E1E0334F500898EE5 /* DetailsViewController.swift */; };
 		33A3CF551DDE2F9700713B28 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF541DDE2F9700713B28 /* Recipe.swift */; };
 		33A3CF571DDE2FBA00713B28 /* RecipeBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF561DDE2FBA00713B28 /* RecipeBook.swift */; };
 		33A3CF601DDE36F300713B28 /* MarmiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF5F1DDE36F300713B28 /* MarmiteTests.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3323717C1E032B5400898EE5 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		3323717E1E0334F500898EE5 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		33A3CF541DDE2F9700713B28 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		33A3CF561DDE2FBA00713B28 /* RecipeBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeBook.swift; sourceTree = "<group>"; };
 		33A3CF5D1DDE36F300713B28 /* MarmiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarmiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,8 @@
 			children = (
 				33D2EBAD1DCBCAB4009ED706 /* AppDelegate.swift */,
 				33D2EBAF1DCBCAB4009ED706 /* ViewController.swift */,
+				3323717C1E032B5400898EE5 /* RecipeTableViewController.swift */,
+				3323717E1E0334F500898EE5 /* DetailsViewController.swift */,
 				33D2EBB11DCBCAB4009ED706 /* Main.storyboard */,
 				33A3CF581DDE2FE800713B28 /* Models */,
 				33D2EBB41DCBCAB4009ED706 /* Assets.xcassets */,
@@ -227,6 +233,8 @@
 				33D2EBB01DCBCAB4009ED706 /* ViewController.swift in Sources */,
 				33A3CF571DDE2FBA00713B28 /* RecipeBook.swift in Sources */,
 				33D2EBAE1DCBCAB4009ED706 /* AppDelegate.swift in Sources */,
+				3323717D1E032B5400898EE5 /* RecipeTableViewController.swift in Sources */,
+				3323717F1E0334F500898EE5 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +427,7 @@
 				33A3CF661DDE36F300713B28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33D2EBA51DCBCAB4009ED706 /* Build configuration list for PBXProject "Marmite" */ = {
 			isa = XCConfigurationList;

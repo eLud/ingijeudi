@@ -71,6 +71,7 @@ class ViewController: UIViewController {
         do {
             let recipe = try recipeFromForm()
             RecipeBook.instance.add(recipe)
+            dismiss(animated: true, completion: nil)
         } catch {
             print("Error")
         }
@@ -78,6 +79,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func cancel(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
         print("Cancel")
     }
 }
